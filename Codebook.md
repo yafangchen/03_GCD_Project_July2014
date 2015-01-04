@@ -1,61 +1,17 @@
-#### Subject
+#### 1. subject
 Number of the 30 voluntees. Its range is from 1-30
 
-#### Activity        
-Different activity type
+#### 2. activityType     
+Different activity type, including: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING 
         
-#### tBodyAccMag-mean
-Average of tBodyAccMag-mean (mean of the measurement for tBodyAccMag) for a specific activity type of a particular subject
-        
-#### tBodyAccMag-std
-Average of tBodyAccMag-std (standard deviation of the measurement for tBodyAccMag) for a specific activity type of a particular subject
-        
-#### tGravityAccMag-mean
-Average of tGravityAccMag-mean (mean of the measurement for tGravityAccMag) for a specific activity type of a particular subject
-        
-#### tGravityAccMag-std
-Average of tGravityAccMag-std (standard deviation of the measurement for tGravityAccMag) for a specific activity type of a particular subject
-        
-#### tBodyAccJerkMag-mean
-Average of tBodyAccJerk-mean (mean of the measurement for tBodyAccJerk) for a specific activity type of a particular subject
+#### 3-68: measurements, values of measurements are bounded within [-1,1]
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
-#### tBodyAccJerkMag-std
-Average of tBodyAccJerk-std (standard deviation of the measurement for tBodyAccJerk) for a specific activity type of a particular subject
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 
-#### tBodyGyroMag-mean
-Average of tBodyGyroMag-mean (mean of the measurement for tBodyGyroMag) for a specific activity type of a particular subject
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 
-#### tBodyGyroMag-std
-Average of tBodyGyroMag-std (standard deviation of the measurement for tBodyGyroMag) for a specific activity type of a particular subject
-        
-#### tBodyGyroJerkMag-mean
-Average of tBodyGyroJerkMag-mean (mean of the measurement for tBodyGyroJerkMag) for a specific activity type of a particular subject
-        
-#### tBodyGyroJerkMag-std
-Average of tBodyGyroJerkMag-std (standard deviation of the measurement for tBodyGyroJerkMag) for a specific activity type of a particular subject
-        
-#### fBodyAccMag-mean
-Average of fBodyAccMag-mean (mean of the measurement for fBodyAccMag) for a specific activity type of a particular subject
-        
-#### fBodyAccMag-std
-Average of fBodyAccMag-std (standard deviation of the measurement for fBodyAccMag) for a specific activity type of a particular subject
-        
-#### fBodyAccJerkMag-mean
-Average of fBodyAccJerk-mean (mean of the measurement for fBodyAccJerk) for a specific activity type of a particular subject
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-#### fBodyAccJerkMag-std
-Average of fBodyAccJerk-std (standard deviation of the measurement for fBodyAccJerk) for a specific activity type of a particular subject
-
-#### fBodyGyroMag-mean
-Average of fBodyGyroMag-mean (mean of the measurement for fBodyGyroMag) for a specific activity type of a particular subject
-
-#### fBodyGyroMag-std
-Average of fBodyGyroMag-std (standard deviation of the measurement for fBodyGyroMag) for a specific activity type of a particular subject
-
-#### fBodyGyroJerkMag-mean
-Average of fBodyGyroJerkMag-mean (mean of the measurement for fBodyGyroJerkMag) for a specific activity type of a particular subject
-        
-#### fBodyGyroJerkMag-std
-Average of fBodyGyroJerkMag-std (standard deviation of the measurement for fBodyGyroJerkMag) for a specific activity type of a particular subject
-        
-#### Note: Values of the measurments are bounded within [-1,1]
+Included in this dataset are measurements on the mean and standard deviation for each measurement. 
