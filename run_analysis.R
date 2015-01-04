@@ -37,4 +37,4 @@ dataMelt <- melt(alldata2,id=c("subject","activityType"),measure.vars=selfeature
 tidyData <- dcast(dataMelt, subject + activityType ~variable,mean)
 
 # Step 7: Write a txt file with the above tidy data set
-write.table(tidyData,file="tidyData.txt")
+write.table(tidyData,file="tidyData.txt",row.names=FALSE)
